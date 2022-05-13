@@ -62,7 +62,7 @@ nav a {
 }
 
 #dsmovie-card-list {
-    padding: 40px 14px;
+    padding: 0 14px;
 }
 
 .dsmovie-card img {
@@ -165,3 +165,49 @@ nav a {
     justify-content: space-between;
 }
 
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
+}
+.dsmovie-pagination-box button img {
+
+filter: brightness(0) saturate(100%) invert(22%) sepia(87%) saturate(2633%) hue-rotate(240deg) brightness(80%) contrast(86%);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
